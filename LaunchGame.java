@@ -9,6 +9,9 @@
 import java.util.Scanner;
 
 class Guesser {
+	/*Instance Variable: Decalred inside the class but outside the methods
+	        OR
+	 Value of the variables changes from Object to Object*/
 	int guessNum;
 
 	int guessNum() {
@@ -22,6 +25,9 @@ class Guesser {
 }
 
 class Player {
+	/*Instance Variable: Decalred inside the class but outside the methods
+	        OR
+	 Value of the variables changes from Object to Object*/
 	int guessNum;
 
 	int guessNum() {
@@ -33,6 +39,9 @@ class Player {
 }
 
 class Umpire {
+	/*Instance Variable: Decalred inside the class but outside the methods
+	        OR
+	 Value of the variables changes from Object to Object*/
 
 	int count1 = 0;
 	int count2 = 0;
@@ -55,7 +64,10 @@ class Umpire {
 		System.out.println();
 
 		// ****Object of Guesser Class*****
-		Guesser g = new Guesser();
+
+	/*Scope of instance variable would be available only when we have refernec pointing to the object.
+         Reference--------------> g */
+		Guesser g = new Guesser(); 
 		int numFromGuesser = g.guessNum();
 
 		if (numFromGuesser < 10) {
